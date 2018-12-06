@@ -12,10 +12,74 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <title>to-do</title>
+    <title>To-Do</title>
   </head>
   <body>
-    <div class="pos f-f"><header></header></div>
+    <div class="pos f-f">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a href="#" class="row d-flex align-content-center">
+            <img
+              src="assets/image/a-golden.png"
+              alt="icon-a-golden"
+              width="24px"
+              height="24px"
+            />
+            <p class="text-white ml-2 mb-0">Andres De To-Do</p>
+          </a>
+        </div>
+      </nav>
+      <div class="container mt-5 w-50">
+        <form class="d-flex flex-column">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="formGroupExampleInput"
+              placeholder="Input"
+            />
+          </div>
+          <div class="form-group row mt-4">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              ><h3>Deadline</h3></label
+            >
+            <div class="col-sm-10">
+              <input type="date" class="form-control" id="inputDate" />
+            </div>
+          </div>
+          <div class="mt-1">
+            <button
+              onclick="document.getElementById('demo').innerHTML = Date()"
+              type="button"
+              class="btn btn-secondary btn-lg btn-block"
+            >
+              Create
+            </button>
+          </div>
+          <div class="card mt-4">
+            <div class="card-body">
+              <div class="d-flex form-group form-check mb-0 row m-0">
+                <div class="w-50 m-0">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    aria-label="Checkbox for following text input"
+                  />
+
+                  <label class="form-check-label ml-2" for="exampleCheck1"
+                    >Check me out</label
+                  >
+                </div>
+                <div class="text-right w-50">
+                  <p id="demo"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
